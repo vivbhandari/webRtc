@@ -1,7 +1,7 @@
 const socket = io('/');
 const videoGrid = document.getElementById('video-grid');
 const myPeer = new Peer(undefined, {
-    host: '/',
+    host: 'ec2-184-72-18-95.us-west-1.compute.amazonaws.com',
     port: '3001'
 });
 const myVideo = document.createElement('video');
