@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
     res.redirect(`/${uuidV4()}`);
 });
 
+app.get('/health', (req, res) => {
+    res.redirect('hello world');
+});
+
 app.get('/:room', (req, res) => {
     res.render('room', {roomId: req.params.room});
 });
