@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/health', (req, res) => {
-    res.redirect('hello world');
+    res.send('hello world');
 });
 
 app.get('/:room', (req, res) => {
